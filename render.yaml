@@ -1,9 +1,11 @@
 databases:
 - name: temporal
+  region: frankfurt
   databaseName: temporal
   user: temporal
   plan: standard
 - name: temporal-visibility
+  region: frankfurt
   databaseName: visibility
   user: visibility
   plan: standard
@@ -11,6 +13,7 @@ databases:
 services:
 - type: pserv
   name: temporal
+  region: frankfurt
   autoDeploy: false
   plan: Standard
   env: docker
@@ -66,6 +69,7 @@ services:
       property: host
 - type: worker
   name: temporal-admin-tools
+  region: frankfurt
   autoDeploy: false
   plan: Standard
   env: docker
@@ -78,6 +82,7 @@ services:
       property: hostport
 - type: web
   name: temporal-web
+  region: frankfurt
   autoDeploy: false
   plan: Standard
   env: docker
