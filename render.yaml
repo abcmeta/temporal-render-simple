@@ -3,7 +3,7 @@ databases:
   region: singapore
   databaseName: temporal
   user: temporal
-  plan: StandardPlus
+  plan: standard plus
 - name: temporal-visibility
   region: singapore
   databaseName: visibility
